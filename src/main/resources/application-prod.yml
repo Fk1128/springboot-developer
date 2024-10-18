@@ -2,7 +2,7 @@ server:
   port: 5000
 spring:
   jpa:
-	database : MYSQL
+    database : MYSQL
     show-sql: true
     database-platform: org.hibernate.dialect.MySQL8Dialect
     hibernate:
