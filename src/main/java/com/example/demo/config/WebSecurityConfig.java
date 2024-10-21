@@ -108,7 +108,9 @@ public class WebSecurityConfig {
       CorsConfiguration configuration = new CorsConfiguration();
       //React 애플리케이션이 실행되는 출처에서 오는 요청을 허용
       configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000",
-    		  "http://react-developer-env.eba-bfip8yjb.ap-northeast-2.elasticbeanstalk.com/")); // 프론트엔드 주소
+    		  "http://react-developer-env.eba-bfip8yjb.ap-northeast-2.elasticbeanstalk.com/",
+    		  "http://app.foo1.shop/",
+    		  "https://app.foo1.shop/")); // 프론트엔드 주소
       //HTTP 메서드 허용 get,post,put,delete,options
       configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
       //모든 헤더를 허용
